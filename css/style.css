@@ -1,0 +1,846 @@
+:root {
+    --main-color: rgba(5, 73, 109, 0.995);
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand{
+    font-family: "Montserrat", sans-serif;
+
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.title{
+    background-image: url(../images/imgs/dots.png);
+    width: fit-content;
+    margin: auto;
+}
+.title h1{
+    transform: translateY(-10px);
+}
+
+.navbar-brand a {}
+
+.daniall{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+
+}
+
+.T{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+/* =========================== */
+    .main-nav .navbar .nav-item .nav-link.active {
+
+        color: white;
+
+    }
+
+/* 
+.main-nav .navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+} */
+
+
+.main-nav .navbar {
+    background-color: slategray;
+
+}
+
+
+.main-nav .navbar .nav-link {
+    position: relative;
+    margin-inline: 0.5rem;
+    overflow: hidden;
+}
+
+.main-nav .navbar .nav-link::after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    left:  -100%;
+    transition: all 1s;
+}
+
+
+/* .main-nav .navbar .nav-link:hover::after {
+    left: 0;
+} */
+
+.main-nav .navbar .nav-item .nav-link.active::after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    left: 6px;
+    transition: all 1s;
+}
+
+.main-drop {
+    position: relative;
+}
+
+.main-drop .main-menu {
+    display: block;
+    position: absolute;
+    top: 150%;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.main-drop:hover .main-menu {
+    opacity: 1;
+    top: 100%;
+
+}
+
+
+.deep-drop {
+    position: relative;
+}
+
+.deep-drop .deep-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    opacity: 0;
+    transition: all 0.6s;
+
+}
+
+.deep-drop:hover .deep-menu {
+    opacity: 1;
+}
+
+/* ============================================================ */
+.home {
+    background-image: url(../images/imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.T-Hello{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 55px;
+}
+.anmi{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+.home .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layer2{
+    background-image: url(../images/imgs/dots.png);
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30px ,  30px);
+}
+.image{ 
+    background-repeat: repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.anmi::after {
+    content: 'I AM';
+   
+    animation: typing 10s infinite ;
+    /* font-size: 40px; */
+
+}
+ 
+@keyframes typing {
+    0% {
+        content: 'I Am';
+    }
+
+    1% {
+        content: 'I Am D|'
+    }
+
+    2% {
+        content: 'I Am De|';
+    }
+
+    3% {
+        content: 'I Am Dev|';
+    }
+
+    4% {
+        content: 'I Am Deve|';
+    }
+
+    5% {
+        content: 'I Am Devel|';
+    }
+
+    6% {
+        content: 'I Am Develo|';
+    }
+
+    7% {
+        content: 'I Am Develop|';
+    }
+
+    8% {
+        content: 'I Am Develope|';
+    }
+
+    10% {
+        content: 'I Am Developer|';
+    }
+
+    22% {
+        content: 'I Am Develope|';
+    }
+
+    23% {
+        content: 'I Am Develop|';
+    }
+
+    24% {
+        content: 'I Am Develo|';
+    }
+
+    25% {
+        content: 'I Am Devel|';
+    }
+
+    26% {
+        content: 'I Am Deve|';
+    }
+
+    27% {
+        content: 'I Am Deve|';
+    }
+
+    28% {
+        content: 'I Am Dev|';
+    }
+
+    29% {
+        content: 'I Am De|';
+    }
+
+    30% {
+        content: 'I Am D|';
+    }
+    /* Designer */
+    31% {
+        content: 'I Am D|';
+    }
+    32%{
+        content: 'I Am De|';
+    }
+    33%{
+        content: 'I Am Des|';
+    }
+    34%{
+        content: 'I Am Desi|';
+    }
+    35%{
+        content: 'I Am Desig|';
+    }
+    36%{
+        content: 'I Am Design|';
+    }
+    37%{
+        content: 'I Am Designe|';
+    }
+    38%{
+        content: 'I Am Designer|';
+    }
+    50%{
+        content: 'I Am Designe|';
+    }
+    40%{
+        content: 'I Am Design|';
+    }
+
+    41% {
+        content: 'I Am Desig|';
+    }
+
+    42% {
+        content: 'I Am Desi|';
+    }
+
+    43% {
+        content: 'I Am Des|';
+    }
+
+    44% {
+        content: 'I Am De|';
+    }
+
+    45% {
+        content: 'I Am D|';
+    }
+
+    46% {
+        content: 'I Am |';
+    }
+    /* Larry Daniels */
+
+    47% {
+        content: 'I Am L|';
+    }
+
+    48% {
+        content: 'I Am La|';
+    }
+
+    49% {
+        content: 'I Am Lar|';
+    }
+
+    50% {
+        content: 'I Am Larr|';
+    }
+
+    51% {
+        content: 'I Am Larry|';
+    }
+    52% {
+        content: 'I Am Larry D|';
+    }
+    53% {
+        content: 'I Am Larry Da|';
+    }
+    54% {
+        content: 'I Am Larry Dan|';
+    }
+    55% {
+        content: 'I Am Larry Dani|';
+    }
+    56% {
+        content: 'I Am Larry Danie|';
+    }
+    57% {
+        content: 'I Am Larry Daniel|';
+    }
+    70% {
+        content: 'I Am Larry Danie|';
+    }
+    71% {
+        content: 'I Am Larry Dani|';
+    }
+    72% {
+        content: 'I Am Larry Dan|';
+    }
+    73% {
+        content: 'I Am Larry Da|';
+    }
+    74% {
+        content: 'I Am Larry D|';
+    }
+    75% {
+        content: 'I Am Larry|';
+    }
+    76% {
+        content: 'I Am Larr|';
+    }
+    77% {
+        content: 'I Am Lar|';
+    }
+    78% {
+        content: 'I Am La|';
+    }
+     79% {
+        content: 'I Am L|';
+    }
+    80% {
+        content: 'I Am |';
+    }
+    100%{
+        content: 'I Am |';
+       
+    }
+}
+.T-about{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+}
+.icon-fex{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    background-color : black;
+}
+/* =======================home============= */
+
+.buttom-D:hover{
+    background-color: white;
+    color: black;
+}
+
+.buttom-L:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ==================== About =================*/
+
+
+.text-service{
+font-weight: 900;
+font-size: 40px;
+line-height: 44px;
+color: rgb(52, 52, 52);
+}
+
+.t-web{
+    font-weight: 800;
+font-size: 18px;
+line-height: 20px;
+}
+
+.progress{
+    height: 24px;
+}
+.icons{
+    width: 70px;
+    height: 70px;
+    color: black;
+    background-color: whitesmoke;
+    border: 10px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.inner:hover  .icons {
+    color: white;
+    background-color: black;
+    border: 10px solid black;
+    
+    
+    }
+
+/* ========================== Services ============= */
+.navs .navs-work .nav-link {
+    position: relative;
+    color: black;
+    
+    /* margin-inline: 0.5rem; */
+    overflow: hidden;
+}
+
+
+.navs .navs-work  .nav-item .nav-link::after {
+    content: '';
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: -100%;
+    transition: all 1s;
+}
+
+.navs .navs-work .nav-item  .nav-link:hover::after {
+    left: 0;
+}
+
+.navs .navs-work .nav-item .nav-link.active::after {
+    content: '';
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+
+.font-s{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.images{
+    position: relative;
+}
+
+.images:hover .layer4{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translate(0, 0);
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.layer4{
+    color: black;
+        /* background-color: rgba(0, 0, 0, 0.7); */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translate(0, 3%);
+    transition: opacity 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.icon-fex2{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+.icon-fex3{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+
+.iconss .icon-fex2:hover .icon-fex2 {
+    color: black;
+    background-color: white;
+}
+
+.iconss .icon-fex3:hover .icon-fex3 {
+    color: black;
+    background-color: white;
+}
+.text-work {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    }
+
+/* ====================== protofolio=================== */
+.text-client{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    }
+
+.slider-image {
+    width: 100px;
+}
+
+.text-lorem-alex{
+    width: 90%;
+    color: rgb(116, 129, 130) ;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.text-alex{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(52, 52, 52)
+}
+
+.text-small{
+    color: rgb(136, 136, 136) ;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+
+.carousel-indicators button{
+    margin-left: 10px !important ;
+    background-color: rgb(116, 129, 130)  !important;
+    padding: 5px !important;
+    border-radius: 100% !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* ================================== clinet =========== */
+
+.pargraph-p{
+    color:  rgb(116, 129, 130);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.font-h{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(52, 52, 52);
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 33px;
+
+}
+
+/* ====================== Break ============= */
+
+.text-team{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    }
+
+    .text-parg-h{
+    background-color: #5b5b5b;
+    color: white;
+    }
+    .text-h4{
+        font-family: "Montserrat", sans-serif;
+        /* color:  rgb(255, 255, 255); */
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .text-h5{
+        font-family: "Montserrat", sans-serif;
+        /* color:  rgb(255, 255, 255); */
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    
+.image-team{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-team img{
+    transition: 0.4s;
+
+}
+   
+.image-team:hover img{
+ transform: scale(1.1);
+}
+
+.image-team:hover .layer5{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: rotateY(360deg ) ;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+
+}
+
+.layer5{
+    color: black;
+        /* background-color: rgba(0, 0, 0, 0.7); */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    transition: all 0.3s;  
+    transition-duration: 0.9s;
+
+
+}
+
+.icon-fex4{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+.icon-fex5{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+.icon-fex6{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+.icon-fex7{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : rgb(0, 0, 0);
+    color: white;
+}
+
+
+.iconss .icon-fex4:hover .icon-fex4 {
+    color: black;
+    background-color: white;
+}
+
+.iconss .icon-fex5:hover .icon-fex5 {
+    color: black;
+    background-color: white;
+}
+.iconss .icon-fex6:hover .icon-fex6 {
+    color: black;
+    background-color: white;
+}
+.iconss .icon-fex7:hover .icon-fex7 {
+    color: black;
+    background-color: white;
+}
+
+/* =============================  Team  =======================  */
+
+.text-Contact{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+
+.icons-c{
+    width: 60px;
+    height: 60px;
+    color: black;
+    background-color: whitesmoke;
+    /* border: 10px solid whitesmoke; */
+    border-radius: 50%;
+}
+
+.inner-c:hover  .icons-c {
+    color: white;
+    background-color: black;
+    border: 10px solid black;
+    
+}
+
+.parg-contact{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    Color: rgb(116, 129, 130)
+}
+
+.form-control {
+    background-color: #f4f4f4;
+}
+
+/* ================================ Contact ======================= */
+
+.final{
+    height: 11vh;
+}
+
+.final-p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    Color: rgb(116, 129, 130);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+/* ====================================================================== */
+
+
+    @media (min-width: 1400px) {
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+          max-width: 1140px;
+        }
+      }

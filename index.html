@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container py-5 ">
+            <div class="tex-t position-relative">
+                <h1 class="ubber-t d-flex justify-content-center ">Bookmarker</h1>
+            </div>
+
+            <div class="favorite d-flex justify-content-center align-items-center ">
+                <i class="fa-solid fa-bookmark mx-2"></i>
+                <h2> Bookmark your favorite sites  </h2>
+                <i class="fa-solid fa-bookmark mx-2"></i>
+            </div>
+          
+            <div class=" where form-floating mb-4 ">
+                <input oninput="validateInputs(this)" list="demo" type="text" class="form-control w-75  m-auto "
+                    id="book" placeholder="Bookmarker Name">
+                    <div class="alert alert-danger my-2 p-2 d-none">Site name must contain at least 3 characters</div>
+                    <label for="book">Site Name </label>
+            </div>
+            <div class="form-floating mb-4">
+                <input oninput="validateInputs(this)" type="text" class="form-control w-75  m-auto" id="web"
+                    placeholder="website URL">
+                    <div class="alert alert-danger my-2 p-2 d-none">Site URL must be a valid one</div>
+                <label for="web">Site URL</label>
+
+            </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <button onclick="addbook()" class="btn btn-danger ">Submit</button>
+            </div>
+            <div class="ss container mb-4">
+                <div class="row">
+                    <div class="col-3">index</div>
+                    <div class="col-3">Website Name</div>
+                    <div class="col-3">Viste</div>
+                    <div class="col-3">Delete</div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
